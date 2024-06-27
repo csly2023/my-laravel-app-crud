@@ -9,7 +9,7 @@
                         <div class="card-header">Add Student Form</div>
                         <div class="card-body">
                             <p class="text-center text-success">{{session('message')}}</p>
-                            <form action="{{route('student.store')}}" method="POST">
+                            <form action="{{route('student.store')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row mb-3">
                                     <label class="col-md-3">Name</label>

@@ -17,3 +17,6 @@ Route::post('/password-generator', [WelcomeController::class, 'passwordGenerator
 Route::get('/student/create', [StudentController::class, 'create'])->name('student.create');
 Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');
 Route::get('/student/all', [StudentController::class, 'index'])->name('student.all');
+Route::get('/student/edit/{id}', [StudentController::class, 'edit'])->name('student.edit');
+Route::post('/student/update/{id}', [StudentController::class, 'update'])->name('student.update');
+Route::get('/student/destroy/{id}', [StudentController::class, 'destroy'])->name('student.destroy');
